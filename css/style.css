@@ -1,0 +1,774 @@
+/* Importing Google font - Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    min-height: 100vh;
+    background: url(/img/www.png) center no-repeat;
+    background-size: cover;
+    font-family: "Poppins",sans-serif;    
+}
+input,textarea {
+    font-family: "Poppins",sans-serif;
+    
+}
+/* Start NavBar Style*/
+nav {
+background-color: #282424;
+box-shadow: 3px 3px 5px rgba(0,0,0,0.1);
+}
+nav ul { 
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+nav li {
+    height: 50px;
+}
+nav a { 
+    display: flex;
+    height: 100%;
+    color: #fff;
+    text-decoration: none;
+    align-items: center;
+    padding: 0px 30px ;
+    
+}
+nav a:hover { 
+    color: #c06b3e ;
+}
+nav li:first-child{
+    margin-right: auto;
+    font-size: 30px;
+}
+nav li:first-child span{
+    color: #c06b3e;
+}
+.sidebar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    background-color: #282424;
+    backdrop-filter: blur(10px);
+    box-shadow: -10px 0px 10px rgba(0,0,0,0.1);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    list-style: none;
+    z-index: 9999;
+}
+.sidebar li {
+    width: 100%;
+}
+.sidebar a {
+    width: 100%;
+}
+.menu-button{
+    display: none;
+}
+/* End NavBar Style*/
+/* Start Home Style*/
+.hero-section {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+}
+.hero-section .content {
+    color:  #ff8e04;
+    max-width: 1250px;
+    width: 100%;
+    margin: 0 auto;
+}
+.hero-section .content h1 {
+    font-size: 1.8rem;
+    max-width: 400px;
+}
+.hero-section .content p {
+    font-weight: 300;
+    margin-top: 15px;
+    max-width: 600px;
+}
+.hero-section .content button {
+    
+    outline: none;
+    border: none;
+    font-size: 1rem;
+    font-weight: 500px;
+    margin-top: 38px;
+    padding: 12px 30px;
+    border-radius: 6px ;
+    cursor: pointer;
+    transition: 0.2 ease;
+}
+button a { 
+    color: black;
+    display: flex;
+    height: 100%;
+    text-decoration: none;
+    align-items: center;
+    padding: 0px 30px ;
+    
+}
+.hero-section .content button:hover {
+    color: #fff;
+    background: #c06b3e ;
+}
+/* End Home Style*/
+
+/* Start About Us Style*/
+.container{
+    width: 100%;
+    margin: auto;
+}
+.aboutUs{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+.aboutUs .info-box{
+    flex: 1;
+    padding: 30px;
+}
+.aboutUs .info-box h2{
+    font-weight: bold;
+    font-size: 30px;
+    color:  #ff8e04;
+    margin: 0 0 10px;
+}
+.aboutUs .info-box p{
+    line-height: 1.8;
+    color: #b2670b;
+}
+.aboutUs .image-box{
+    flex: 1;
+    text-align: center;
+}
+.aboutUs .image-box img{
+    width: 250px;
+    height: 250px;
+}
+/* End About Us Style*/
+
+/* Start Contact Style*/
+.container2{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    padding: 2rem;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.form {
+    width: 100%;
+    max-width: 820px;
+    background-color: white ;
+    border-radius: 10px;
+    box-shadow: 0 0 20px 1px rgba(0 , 0 , 0 , 0.1);
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.contact-info{
+    background-color: #b2670b ;
+    position: relative;
+
+}
+.contact-form{
+    background-color:#282424 ;
+    position: relative;
+}
+.contact-info:before{
+    content: "";
+    position: absolute;
+    width: 26px;
+    height: 26px;
+    background-color:#282424;
+    transform: rotate(45deg);
+    top: 50px;
+    right: -13px;
+}
+.circle{
+    border-radius: 50%;
+    background:linear-gradient(135deg , transparent  , #fd8b00);
+    position: absolute;
+}
+.circle.one{
+    width: 130px;
+    height: 130px;
+    top: 130px;
+    right: -40px;
+}
+.circle.two{
+    width: 80px;
+    height: 80px;
+    top: 10px;
+    right: 30px;   
+}
+form{
+    padding: 2.3rem 2.3rem;
+    z-index: 10;
+    overflow: hidden;
+    position: relative;
+}
+.title{
+    color: #fff;
+    font-weight: 500;
+    font-size: 1.5rem;
+    line-height: 1;
+    margin-bottom:0.7rem;
+}
+.input-container{
+    position: relative;
+    margin: 1rem 0;
+}
+
+.input {
+    width: 100%;
+    outline: none;
+    border: 2px solid #fafafa;
+    padding: 0.8rem 1.2rem;
+    background: none;
+    color: #FFF;
+    font-weight: 500;
+    font-size: 0.95rem;
+    letter-spacing: 0.5px;
+    border-radius: 25px;
+    transition: 0.3s;
+    
+}
+textarea.input{
+    padding: 0.8rem 1.2rem;
+    min-height: 150px;
+    border-radius: 22px;
+    resize: none;
+    overflow-y: auto;
+}
+
+.input-container label{
+    position: absolute;
+    top: 30%;
+    left: 15px;
+    transform: translate(50%);
+    padding: 0 0.4rem;
+    color: #fafafa;
+    font-size: 0.9rem;
+    font-weight: 400;
+    pointer-events: none;
+    z-index: 1000;
+    transition: 0.5s;
+}
+.input-container.textarea label{
+    top: 1rem;
+    left: 45px;
+    transform: translateY(0);
+}
+.btn {
+    padding: 0.6rem 1.3rem;
+    background-color: #fff;
+    border: 2px solid #fafafa;
+    font-size: 0.95rem;
+    color: #b2670b;
+    line-height: 1;
+    border-radius: 25px;
+    outline: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.btn:hover{
+    background-color: transparent;
+    color: #fff;
+    margin: 0px;
+}
+
+.input-container span{
+    position: absolute;
+    top: 0;
+    left: 25px;
+    transform: translateY(-50%);
+    font-size: 0.8rem;
+    padding: 0 0.4rem;
+    color: transparent;
+    pointer-events: none;
+    z-index: 500;
+}
+.input-container span:before,
+.input-container span:after{
+    content : "";
+    position: absolute;
+    width: 10%;
+    opacity: 0;
+    transition: 0.3s;
+    height: 5px;
+    background-color: #282424;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.input-container span:before {
+    left: 50%;
+}
+.input-container span:after {
+    right: 50%;
+}
+.input-container.focus label{
+    top: 5px;
+    transform: translateY(-50%);
+    left: 25px;
+    font-size: 0.8rem;
+}
+.input-container.focus span:before,
+.input-container.focus span:after {
+    width: 50%;
+    opacity: 1;
+}
+.contact-info{
+    padding: 2.3rem 2.2rem;
+    position: relative;
+}
+.text{
+    color: #333;
+    margin: 1.5rem 0 2rem 0;
+}
+.information{
+    display: flex;
+    color: #252424;
+    margin: 0.7rem 0;
+    align-items: center;
+    font-size: 0.95rem;
+}
+.icon{
+    width: 28px;
+    margin-right: 0.7rem;
+}
+.social-media{
+    padding: 2rem 0 0 0;
+}
+.social-media p {
+    color: #333;
+}
+.social-icons{
+    display: flex;
+    margin-top: 0.5rem;
+    
+}
+.social-icons a {
+    width: 35px;
+    height: 35px;
+    border-radius:5px ;
+    background: linear-gradient(45deg,#252424,#333);
+    color: #fd8b00;
+    text-align: center;
+    line-height: 35px;
+    padding-top: 2px;
+    margin-right:0.5rem ;
+    transition: 0.3s;
+}
+.social-icons a:hover{
+    transform: scale(1.09);
+}
+.contact-info .circle.three{
+    position: absolute;
+    width: 160px;
+    height: 150px;
+    border: 22px solid #282424;
+    border-radius: 50%;
+    bottom: -97px;
+    right: 50px;
+    opacity: 0.3;
+}
+.input-container .error-txt{
+    font-size: 14.5px;
+    color: #d93025;
+    text-align: left;
+    margin: 8px 0 8px 8px;
+    display: none;
+}
+form .input-container .error-txt{
+    margin-top: 2px;
+}
+/* End Contact Style*/
+
+/* Start Tasks Style */
+.todo-container {
+    width: 750px;
+    background-color: #fd8b00;
+    border-radius: 15px;
+    margin: 3rem auto;
+    padding: 1.5rem;
+}
+
+.form-control {
+    display: flex;
+}
+
+.form-control input {
+    width: 250px;
+    flex: 1;
+    outline: 0;
+    box-shadow: none;
+    border: 1px solid #858585;
+}
+
+.form-control button {
+    background-color: #76df76;
+    border: 0px;
+    width: 30px;
+}
+
+.form-control button:hover {
+    background-color: green;
+}
+
+.date-hour {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 1rem 1.5rem 1rem;
+    font-size: 16px;
+    color: #858585;
+}
+
+button {
+    background-color: darkgoldenrod;
+    color: #858585;
+    border: 2px solid #858585;
+    padding: 0.2rem 0.4rem;
+    font-size: 0.8rem;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s;
+    border: 1px solid #f5880e;
+}
+
+button:hover {
+    background-color: orangered;
+    color: white;
+}
+
+button > i {
+    font-weight: bold;
+    pointer-events: none;
+}
+
+input {
+    padding: 0.4rem 0.5rem;
+}
+
+.hide {
+    display: none;
+}
+
+.todo-container header {
+    padding: 0 1rem 1rem;
+    border-bottom: 1px solid #ccc;
+}
+
+header > h1 {
+    padding-left: 16px;
+    border-left: 5px solid #858585;
+}
+
+#todo-form,
+#edit-form {
+    padding: 1rem;
+    border-bottom: 1px solid #c06b3e;
+}
+
+#todo-form > p,
+#edit-form > p {
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+.form-control > input {
+    margin-right: 0.8rem;
+}
+
+#cancel-edit-btn {
+    margin-top: 1rem;
+}
+
+.todo,
+.todoDescc {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    transition: 0.3s;
+}
+
+.todoDescc {
+    padding-left: 30px;
+    border-bottom: 1px solid #ddd;
+}
+
+.todo h3 {
+    flex: 1;
+    font-size: 0.9rem;
+}
+.todoDescc p {
+    font-size: 0.9rem;
+}
+
+.todo button,
+.todoDescc button {
+    margin-left: 0.4rem;
+    border-radius: 50px;
+    width: 40px;
+    height: 40px;
+    border: none;
+    background-color: #fd8b00;
+    color: black;
+}
+
+.done {
+    background-color: green;
+}
+
+.done h3 {
+    color: white;
+    text-decoration: line-through;
+    font-style: italic;
+}
+
+.todo button:hover,
+.done button,
+.todoDescc button:hover {
+    background-color: #395169;
+    color: #ecf0f1;
+}
+
+.done > button:hover {
+    background-color: #ecf0f1;
+    color: #102F5e;
+}
+
+#todo-list {
+    max-height: 220px;
+    overflow: auto;
+}
+
+#cancel-edit-btn {
+    margin-left: 0.4rem;
+    width: 60px;
+    height: 40px;
+    border: none;
+    background-color: #fd8b00;
+    color: black;
+}
+
+#cancel-edit-btn:hover {
+    background-color: #395169;
+    color: #ecf0f1;
+}
+
+#filter-all {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px ;
+    margin-top: 10px;
+}
+.filter{
+    color: #282424;
+    padding: 5px 15px;
+    border-radius: 100px;
+    border: 2px solid #fd8b00;
+    transition: all 0.2s ease;
+    cursor: pointer;
+}
+.filter.active{
+    background-color: green;
+    border-radius: 5px;
+
+}
+.filter:hover {
+    background-color: green;
+    border-radius: 5px;
+
+}
+#delete-all {
+    display: flex;
+    color: #eee;
+    border-radius: 100px;
+    padding: 7px 10px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+#delete-all:hover {
+    border-radius: 5px;
+    background-color: black;
+}
+#task-count{
+    font-size: 15px;
+    color: #333;
+}
+
+/* End Tasks Style */
+
+
+
+
+
+@media screen and (max-width: 800px ) {
+    .hideOnMobile{
+        display: none;     
+    }
+    .logo {
+        margin-right: auto;
+        font-size: 20px;
+    }
+    .menu-button{
+        display: block;
+    }  
+    .hero-section .content{
+        text-align: center;
+    }
+    .hero-section .content :is(h1, p){
+        max-width: 100%;
+    }
+    .hero-section .content h1 {
+        font-size: 2.3rem;
+        line-height: 60px;
+    }
+    .hero-section .content button {
+        padding: 9px 18px ;
+    }
+    .container{
+        width: 400px;
+    }
+    .container .aboutUs{
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+    }
+    .aboutUs .info-box :is(h2, p){
+        max-width: 100%;
+    }
+    .aboutUs .info-box h2{
+        font-size: 2.3rem;
+        line-height: 60px;
+    }
+    .aboutUs .info-box p{
+        font-size: 1.3rem;
+        line-height: 30px;
+    }
+    .form{
+        grid-template-columns: 1fr;
+    }
+    .contact-info .circle.three{
+        bottom: initial;
+        top: -75px;
+        right: 65px;
+        transform: scale(0.95);
+    }
+    .contact-info:before{
+        top: 430px;
+        left: initial;
+        right: 70px;
+    }
+    .text{
+        margin: 1rem 0 1.5rem 0;
+    }
+    .social-media{
+        padding: 1.5rem 0 0 0;
+    }
+    .todo-container {
+        max-width: 500px;
+        margin: 3rem auto  ;
+        padding: 0.6rem;
+    }
+    .form-control input {
+        width: 150px;
+    }
+}
+@media screen and (max-width: 460px ) {
+    .sidebar{
+        width: 100%;
+    }
+    .logo{
+        display: none;
+    }
+    
+    .hero-section .content{
+        text-align: center;
+    }
+    .hero-section .content :is(h1, p){
+        max-width: 100%;
+    }
+    .hero-section .content h1 {
+        font-size: 1.1rem;
+        line-height: 20px;
+    }
+
+    .hero-section .content button {
+        padding: 6px 12px ;
+    }
+    .container{
+        width: 300px;
+    }
+    .container .aboutUs{
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+    }
+    .aboutUs .info-box :is(h2, p){
+        max-width: 100%;
+    }
+    .aboutUs .info-box h2{
+        font-size: 1.8rem;
+        line-height: 20px;
+    }
+    .aboutUs .info-box p{
+        font-size: 1rem;
+        line-height: 25px;
+    }
+    .aboutUs .image-box img{
+        width: 200px;
+        height: 200px;
+    } 
+    .container2{
+        padding: 1.5rem;
+    }
+    .circle.three{
+        display: none;
+    }
+    form,.contact-info{
+        padding: 1.7rem 1.6rem;
+    }
+    .text, .information, .social-media p {
+        font-size: 0.8rem;
+    }
+    .contact-info:before{
+        top: 410px;
+        left: initial;
+        right: 70px;
+    }
+    .title{
+        font-size: 1.15rem;
+    }
+    .todo-container {
+        width: 400px;
+    }    
+
+}
+
+
+
+
+
+
+

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TO DO List</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">    
+</head>
+<body onload="time()">
+    <header>
+        <nav >
+            <ul  class="sidebar">
+                <li  onclick=" hideSidebar()"> <a href="#"> &times; </a> </li>
+                <li ><a href="#" > TO-DO-List<span>.</span></a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Tasks</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <ul  >
+                <li class="logo" ><a href="#" > TO-DO-List<span>.</span></a></li>
+                <li class="hideOnMobile"><a href="index.html">Home</a></li>
+                <li class="hideOnMobile"><a href="#">Tasks</a></li>
+                <li class="hideOnMobile"><a href="about.html">About</a></li>
+                <li class="hideOnMobile"><a href="contact.html">Contact</a></li>
+                <li class="menu-button"  onclick="showSidebar()" style="size: 30px;"> <a href="#"> &#9776; Menu </a> </li>
+            </ul>
+        </nav>
+    </header>
+    <div class="todo-container">
+        <div class="date-hour">
+            <p id="date">Date</p>
+            <p id="hour">Hour</p>
+        </div>
+        <header>
+            <h1>Todo List</h1>
+        </header>
+
+        <!--Add Task-->
+        <form action=""  id="todo-form">
+            <p>Add Your Task Here</p>
+            <div class="form-control">
+                <input type="text" id="todo-input" placeholder="Type here about your next task here">
+                <input type="text" id="todo-desc" placeholder="Type here about your next Descrition">
+                <button type="submit"><i>&#10010</i></button>
+            </div>
+        </form>
+
+        <!--Edit The Task-->
+        <form action="" id="edit-form" class="hide">
+            <p>Edit Your Task</p>
+            <div class="form-control">
+                <input type="text" id="edit-input" placeholder="Type here about your next task here">
+                <input type="text" id="edit-inputDesc" placeholder="Type here about your next Descrition">
+                <button type="submit"><i class="fa-solid fa-check-double"></i></button>
+            </div>
+            <button type="button" id="cancel-edit-btn">Cancel</button>
+        </form>
+
+        <div id="filter-all">
+            <div class="filter"  id="filterAll" data-filter="all">All</div>
+            <div class="filter"  id="filter-completed" data-filter="completed">Complete</div>
+            <div class="filter" id="filter-pending" data-filter="pending">Incomplete</div>
+        </div>
+        <!--Task List -->
+        <div class="todo-list" id="todo-list">
+            <div class="todo">
+            </div>
+        </div>
+        <div id="delete-all">
+            <p id="task-count"></p>
+            <h3>Delete All</h3>
+        </div>
+        
+    </div>
+
+
+    <script src="js\main.js"></script>
+</body>
+</html>
+
+
+
